@@ -10,3 +10,5 @@ SET iso_timestamp =
             THEN '00' || substr(creation_time, 3, 6)
         ELSE substr(creation_time, 1, 8)
     END;
+	
+	/* There is an issue with the iso_timestamp being updated is certain conditions:  2018-02-05T1712:46 */
