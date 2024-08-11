@@ -1,4 +1,5 @@
 -- Join mission points to point found on mra.GlobalID = pf.ParentGlobalID
+CREATE VIEW v_joined_on_globalid AS
 SELECT 
   mp.GlobalID,
   pf.ParentGlobalID,
