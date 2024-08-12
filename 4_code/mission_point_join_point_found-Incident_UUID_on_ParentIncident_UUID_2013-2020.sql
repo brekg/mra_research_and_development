@@ -7,7 +7,9 @@ SELECT
   mp.IncidentStartDateandTime,
   mp.TeamName,
   mp.CreationDate,
-  mp.creation_timestamp_iso
+  mp.creation_timestamp_iso,
+  mp.x,
+  mp.y
 FROM 
   mission_point mp
 LEFT JOIN 
