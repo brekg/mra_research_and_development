@@ -14,7 +14,6 @@ env/
 # *.csv
 *.json
 *.pkl
-*.ods
 
 # Logs
 *.log
