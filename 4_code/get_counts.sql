@@ -4,17 +4,21 @@
 --SELECT count(*) FROM point_found where ParentGlobalID is NOT NULL--2210
 --SELECT count(*) FROM point_found where ParentGlobalID is NULL--107
 ---------------------------------------------------------------------------
-/* Counts on GlobalID join */
+/* Count mission_point.GlobalID joined */
 --SELECT count(*) FROM v_joined_on_globalid
---WHERE GlobalID is NOT NULL AND ParentGlobalID is NOT NULL--1951
+--WHERE GlobalID is NOT NULL AND ParentGlobalID is NOT NULL
 
+/* Count mission_point.GlobalID no join */
 --SELECT count(*) FROM v_joined_on_globalid 
---WHERE GlobalID is NOT NULL AND ParentGlobalID is NULL--12641
+--WHERE GlobalID is NOT NULL AND ParentGlobalID is NULL
 ---------------------------------------------------------------------------
-/* Counts on Incident_UUID join */
+/* Count mission_point.Incident_UUID joined */
 --SELECT count(*) FROM v_joined_on_incident_uuid
---WHERE Incident_UUID is NOT NULL AND Linked_Incident_UUID is NOT NULL--1241
+--WHERE Incident_UUID is NOT NULL AND Linked_Incident_UUID is NOT NULL
 
+/* Count mission_point.Incident_UUID no join */
 --SELECT count(*) FROM v_joined_on_incident_uuid
---WHERE Incident_UUID is NOT NULL AND Linked_Incident_UUID is NULL--4064
+--WHERE Incident_UUID is NOT NULL AND Linked_Incident_UUID is NULL
 ---------------------------------------------------------------------------
+/* Get column counts */
+--PRAGMA table_info(TABLE_NAME); 

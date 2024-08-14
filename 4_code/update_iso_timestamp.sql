@@ -1,5 +1,5 @@
 UPDATE mission_point
-SET iso_timestamp = 
+SET creation_timestamp_iso = 
     creation_year || '-' ||
     substr('0' || creation_month, -2) || '-' ||
     substr('0' || creation_day, -2) || 'T' ||

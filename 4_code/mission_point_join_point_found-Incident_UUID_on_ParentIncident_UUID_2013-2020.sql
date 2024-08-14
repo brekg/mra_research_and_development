@@ -1,4 +1,3 @@
--- Join mission points to point found on Incident_UUID = Linked_Incident_UUID then push this to a VIEW
 CREATE VIEW v_joined_on_incident_uuid AS
 SELECT 
   mp.Incident_UUID,
