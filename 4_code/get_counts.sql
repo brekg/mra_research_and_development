@@ -3,6 +3,9 @@
 --SELECT count(*) FROM mission_point where GlobalID is NULL--0
 --SELECT count(*) FROM point_found where ParentGlobalID is NOT NULL--2210
 --SELECT count(*) FROM point_found where ParentGlobalID is NULL--107
+
+
+
 ---------------------------------------------------------------------------
 /* Count mission_point.GlobalID joined */
 --SELECT count(*) FROM v_joined_on_globalid
