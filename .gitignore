@@ -27,3 +27,4 @@ env/
 ehthumbs.db
 Thumbs.db
 *.db-journal
+10_ignore_git/
