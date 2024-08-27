@@ -4,6 +4,7 @@ SELECT
   pf.ParentGlobalID,
   mp.Incident_UUID,
   pf.Linked_Incident_UUID,
+  mp.Form_Version,
   mp.IncidentNumber,
   mp.IncidentStartDateandTime,
   mp.TeamName,
